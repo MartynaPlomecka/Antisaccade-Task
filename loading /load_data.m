@@ -14,10 +14,8 @@ addpath('/Volumes/methlab/Neurometric/Antisaccades/ALL/FastICA_25')
 addpath('/Volumes/methlab/Neurometric/Antisaccades/ALL/UNFOLD')
 addpath('/Volumes/methlab/Neurometric/Antisaccades/ALL/UNFOLD/unfold')
 
-% addpath('tools');
 eeglab;
 close
-%addpath('/Users/mplome/Desktop/Tools')
 table_old =readtable("/Volumes/methlab/Neurometric/Antisaccades/ALL/old.xlsx");
 table_young =readtable("/Volumes/methlab/Neurometric/Antisaccades/ALL/young.xlsx");
 oldIDsA = table_old{3:end,1};
@@ -34,7 +32,6 @@ etfolder='/Volumes/methlab/Neurometric/Antisaccades/main_analysis/ET'; %MO
  
 %WINDOWS
 elseif system == 0 % Windows
-%ta sciezka ma byc('/Volumes/methlab/Neurometric/Antisaccades/ALL/eeglab14_1_2b/'
 cd('W:\Neurometric\Antisaccades\ALL\eeglab14_1_2b')
 addpath('W:\Neurometric\Antisaccades\ALL\')
 addpath('W:\Neurometric\Antisaccades\ALL\FastICA_25')
